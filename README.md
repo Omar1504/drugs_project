@@ -23,7 +23,7 @@ Based on the graph in description, I loop on drugs table and I search drug name 
 The main keys of our output dictionnary are drug_ids. On a second level, we have the related entities to drugs which are Pubmed, clinical_trials and journal. In pubmed and clinical_trials, we will found in the JSON the titles of publications referenced by date. Finaly, we will have in the output the associated journals to these publications referenced also by date. 
 
 This vision was translated by the following JSON Schema : 
-```json
+```yaml
 {
         drug_id : {
                     "pubmed": { // the founded titles are grouped by date and shown in a list in order to have a great visibility about the concerned drug
